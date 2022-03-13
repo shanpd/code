@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>git · GitBook</title>
+        <title>medicine · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="02_java.html" />
+    <link rel="next" href="99_passwd.html" />
     
+    
+    <link rel="prev" href="03_python.html" />
     
 
     </head>
@@ -87,7 +89,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -126,7 +128,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="98_medicine.html">
+        <li class="chapter active" data-level="1.4" data-path="98_medicine.html">
             
                 <a href="98_medicine.html">
             
@@ -182,7 +184,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >git</a>
+        <a href="." >medicine</a>
     </h1>
 </div>
 
@@ -197,42 +199,33 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p><a href="01_git/01_git.pdf">01_git</a><br>
-<a href="01_git/02_gitbook.pdf">02_gitbook</a><br>
-<a href="01_git/03_markdown.pdf">03_markdown</a><br></p>
-<h3 id="gitbookutil">gitbookUtil</h3>
-<pre><code>import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+                                <h1 id="&#x4E2D;&#x836F;&#x5B66;">&#x4E2D;&#x836F;&#x5B66;</h1>
+<h3 id="&#x4E00;&#x3001;&#x4E66;">&#x4E00;&#x3001;&#x4E66;</h3>
+<pre><code>1&#x3001;&#x5B9E;&#x7528;&#x4E2D;&#x533B;&#x5B66;
+2&#x3001;&#x5343;&#x5BB6;&#x5999;&#x65B9;
+3&#x3001;&#x5B9E;&#x7528;&#x5185;&#x79D1;&#x8BCA;&#x65AD;&#x6CBB;&#x7597;&#x5B66;
+</code></pre><h3 id="&#x4E8C;&#x3001;&#x836F;">&#x4E8C;&#x3001;&#x836F;</h3>
+<p>&#x4E00;&#x3001;&#x89E3;&#x8868;&#x836F;</p>
+<pre><code>&#x4E00;&#x3001;&#x53D1;&#x6563;&#x98CE;&#x5BD2;&#x836F;
+1&#x3001;&#x8346;&#x82A5;&#xFF1A;
+2&#x3001;&#x7D2B;&#x82CF;&#xFF1A;
+&#x4E8C;&#x3001;&#x53D1;&#x6563;&#x98CE;&#x70ED;&#x836F;
+&#x4E09;&#x3001;&#x53D1;&#x6563;&#x98CE;&#x6E7F;&#x836F;
+</code></pre><p>&#x4E8C;&#x3001;&#x795B;&#x6691;&#x836F;</p>
+<p>&#x4E09;&#x3001;&#x6CFB;&#x4E0B;&#x836F;</p>
+<p>&#x56DB;&#x3001;&#x9A71;&#x866B;&#x836F;</p>
+<p>&#x4E94;&#x3001;&#x795B;&#x5BD2;&#x836F;</p>
+<p>&#x516D;&#x3001;&#x6E05;&#x70ED;&#x836F;</p>
+<p>&#x4E03;&#x3001;&#x6B62;&#x54B3;&#x5316;&#x75F0;&#x5E73;&#x5598;&#x836F;</p>
+<p>&#x516B;&#x3001;&#x7406;&#x6C14;&#x836F;</p>
+<p>&#x4E5D;&#x3001;&#x6D88;&#x5BFC;&#x836F;</p>
+<p>&#x5341;&#x3001;&#x7406;&#x8840;&#x836F;</p>
+<p>&#x5341;&#x4E00;&#x3001;&#x6E17;&#x6E7F;&#x5229;&#x6C34;&#x836F;</p>
+<p>&#x5341;&#x4E8C;&#x3001;&#x5B89;&#x795E;&#x9547;&#x60CA;&#x836F;</p>
+<p>&#x5341;&#x4E09;&#x3001;&#x56FA;&#x6DA9;&#x836F;</p>
+<p>&#x5341;&#x56DB;&#x3001;&#x8865;&#x517B;&#x836F;</p>
+<h3 id="&#x4E09;&#x3001;&#x65B9;">&#x4E09;&#x3001;&#x65B9;</h3>
 
-import java.io.File;
-import java.io.IOException;
-
-public class FileDemo {
-    public static void main(String[] args) throws IOException {
-
-        String dirPath = &quot;C:\\Users\\shanpd\\Desktop\\book\\_book&quot;;
-
-        //String dirPath = &quot;C:\\Users\\shanpd\\Desktop\\book\\01_git&quot;;
-        File dir = new File(dirPath);
-        getFileList(dir);
-
-    }
-
-    //&#x83B7;&#x53D6;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x9762;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;
-    public static void getFileList(File dir) throws IOException {
-
-        File[] files = dir.listFiles();
-        for (int i = 0;i &lt; files.length; i++){
-            if (files[i].isDirectory()){
-                getFileList(files[i]);
-            }
-            if (files[i].getName().contains(&quot;.pdf&quot;)){
-                String name = files[i].getAbsolutePath().split(&quot;\\\\_book&quot;)[1].replace(&quot;\\&quot;, &quot;/&quot;);
-                System.out.println(&quot;&lt;a href=&quot; + name +  &quot;&gt;&quot;+ files[i].getName() + &quot;&lt;/a&gt;&lt;br/&gt;&quot;);
-            }
-        }
-    }
-}
-</code></pre>
                                 
                                 </section>
                             
@@ -259,8 +252,12 @@ public class FileDemo {
 
             
                 
+                <a href="03_python.html" class="navigation navigation-prev " aria-label="Previous page: python">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="02_java.html" class="navigation navigation-next navigation-unique" aria-label="Next page: java">
+                
+                <a href="99_passwd.html" class="navigation navigation-next " aria-label="Next page: psw">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -271,7 +268,7 @@ public class FileDemo {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"git","level":"1.1","depth":1,"next":{"title":"java","level":"1.2","depth":1,"path":"02_java.md","ref":"02_java.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2022-02-27T08:34:58.005Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-13T02:20:20.858Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"medicine","level":"1.4","depth":1,"next":{"title":"psw","level":"1.5","depth":1,"path":"99_passwd.md","ref":"99_passwd.md","articles":[]},"previous":{"title":"python","level":"1.3","depth":1,"path":"03_python.md","ref":"03_python.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"98_medicine.md","mtime":"2022-03-13T02:18:27.388Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-13T02:20:20.858Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
