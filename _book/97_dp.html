@@ -1,0 +1,697 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>dp · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="03_python.html" />
+    
+    
+    <link rel="prev" href="02_java.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="02_java.html">
+            
+                <a href="02_java.html">
+            
+                    
+                    java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="97_dp.html">
+            
+                <a href="97_dp.html">
+            
+                    
+                    dp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="03_python.html">
+            
+                <a href="03_python.html">
+            
+                    
+                    python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="98_medicine.html">
+            
+                <a href="98_medicine.html">
+            
+                    
+                    medicine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="99_passwd.html">
+            
+                <a href="99_passwd.html">
+            
+                    
+                    psw
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >dp</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x4E00;&#x3001;&#x52A8;&#x6001;&#x89C4;&#x5212;">&#x4E00;&#x3001;&#x52A8;&#x6001;&#x89C4;&#x5212;</h3>
+<h5 id="01&#x3001;-&#x6570;&#x5854;&#x53D6;&#x6570;&#x95EE;&#x9898;">01&#x3001; &#x6570;&#x5854;&#x53D6;&#x6570;&#x95EE;&#x9898;</h5>
+<p>&#x4E00;&#x4E2A;&#x9AD8;&#x5EA6;&#x4E3A;N&#x7684;&#x7531;&#x6B63;&#x6574;&#x6570;&#x7EC4;&#x6210;&#x7684;&#x4E09;&#x89D2;&#x5F62;&#xFF0C;&#x4ECE;&#x4E0A;&#x8D70;&#x5230;&#x4E0B;&#xFF0C;&#x6C42;&#x7ECF;&#x8FC7;&#x7684;&#x6570;&#x5B57;&#x548C;&#x7684;&#x6700;&#x5927;&#x503C;&#x3002; 
+&#x6BCF;&#x6B21;&#x53EA;&#x80FD;&#x8D70;&#x5230;&#x4E0B;&#x4E00;&#x5C42;&#x76F8;&#x90BB;&#x7684;&#x6570;&#x4E0A;&#xFF0C;&#x4F8B;&#x5982;&#x4ECE;&#x7B2C;3&#x5C42;&#x7684;6&#x5411;&#x4E0B;&#x8D70;&#xFF0C;&#x53EA;&#x80FD;&#x8D70;&#x5230;&#x7B2C;4&#x5C42;&#x7684;2&#x6216;9&#x4E0A;&#x3002;</p>
+<p>&#x8BE5;&#x4E09;&#x89D2;&#x5F62;&#x7B2C;n&#x5C42;&#x6709;n&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<p>&#x7B2C;&#x4E00;&#x5C42;&#x6709;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF1A;5</p>
+<p>&#x7B2C;&#x4E8C;&#x5C42;&#x6709;&#x4E24;&#x4E2A;&#x6570;&#x5B57;&#xFF1A;8 4</p>
+<p>&#x7B2C;&#x4E09;&#x5C42;&#x6709;&#x4E09;&#x4E2A;&#x6570;&#x5B57;&#xFF1A;3 6 9</p>
+<p>&#x7B2C;&#x56DB;&#x5C42;&#x6709;&#x56DB;&#x4E2A;&#x6570;&#x5B57;&#xFF1A;7 2 9 5</p>
+<p>&#x6700;&#x4F18;&#x65B9;&#x6848;&#x662F;&#xFF1A;5 + 8 + 6 + 9 = 28</p>
+<p>&#x6CE8;&#x610F;:&#x4E0A;&#x9762;&#x5E94;&#x8BE5;&#x662F;&#x6392;&#x5217;&#x6210;&#x4E00;&#x4E2A;&#x4E09;&#x89D2;&#x5F62;&#x7684;&#x6837;&#x5B50;&#x4E0D;&#x662F;&#x7AD6;&#x5411;&#x5BF9;&#x5E94;&#x7684;&#xFF0C;&#x6392;&#x7248;&#x95EE;&#x9898;&#x6CA1;&#x6709;&#x663E;&#x793A;&#x6210;&#x4E09;&#x89D2;&#x5F62;&#x3002;</p>
+<p>&#x72B6;&#x6001;&#x5B9A;&#x4E49;: Fi&#xFF0C;j&#x662F;&#x7B2C;i&#x884C;j&#x5217;&#x9879;&#x6700;&#x5927;&#x53D6;&#x6570;&#x548C;&#xFF0C;&#x6C42;&#x7B2C;n&#x884C;Fn&#xFF0C;m&#xFF08;0 &lt; m &lt; n&#xFF09;&#x4E2D;&#x6700;&#x5927;&#x503C;&#x3002;</p>
+<p>&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x65B9;&#x7A0B;&#xFF1A;Fi&#xFF0C;j = max{Fi-1,j-1,Fi-1,j}+Ai,jt</p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.util.Scanner;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dp01</span> </span>{
+
+    <span class="hljs-comment">/**
+     * &#x6570;&#x5854;&#x53D6;&#x6570;&#x95EE;&#x9898;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+
+        Scanner sc = <span class="hljs-keyword">new</span> Scanner(System.in);
+
+        <span class="hljs-keyword">while</span> (sc.hasNext()){
+
+            <span class="hljs-keyword">int</span> n = sc.nextInt();
+            <span class="hljs-keyword">int</span>[][] dp = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[n][n];
+            dp[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>] = sc.nextInt();
+            <span class="hljs-keyword">long</span> max = dp[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>];
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt; n; i++) {
+                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt;= i; j++) {
+                    <span class="hljs-keyword">int</span> num = sc.nextInt();
+                    <span class="hljs-keyword">if</span>(j == <span class="hljs-number">0</span>)
+                        dp[i][j] = dp[i-<span class="hljs-number">1</span>][j] + num;
+                    <span class="hljs-keyword">else</span>
+                        dp[i][j] = Math.max(dp[i-<span class="hljs-number">1</span>][j-<span class="hljs-number">1</span>],dp[i-<span class="hljs-number">1</span>][j]) + num;
+                    max = Math.max(dp[i][j],max);
+                }
+
+            }
+
+            System.out.println(max);
+        }
+
+        sc.close();
+    }
+
+}
+</code></pre>
+<h5 id="02&#x3001;&#x7F16;&#x8F91;&#x8DDD;&#x79BB;">02&#x3001;&#x7F16;&#x8F91;&#x8DDD;&#x79BB;</h5>
+<p>&#x7F16;&#x8F91;&#x8DDD;&#x79BB;&#xFF0C;&#x53C8;&#x79F0;Levenshtein&#x8DDD;&#x79BB;&#xFF08;&#x4E5F;&#x53EB;&#x505A;Edit Distance&#xFF09;&#xFF0C;&#x662F;&#x6307;&#x4E24;&#x4E2A;&#x5B57;&#x4E32;&#x4E4B;&#x95F4;&#xFF0C;&#x7531;&#x4E00;&#x4E2A;&#x8F6C;&#x6210;&#x53E6;&#x4E00;&#x4E2A;&#x6240;&#x9700;&#x7684;&#x6700;&#x5C11;&#x7F16;&#x8F91;&#x64CD;&#x4F5C;&#x6B21;&#x6570;&#x3002;&#x8BB8;&#x53EF;&#x7684;&#x7F16;&#x8F91;&#x64CD;&#x4F5C;&#x5305;&#x62EC;&#x5C06;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x66FF;&#x6362;&#x6210;&#x53E6;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x63D2;&#x5165;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x3002; 
+&#x4F8B;&#x5982;&#x5C06;kitten&#x4E00;&#x5B57;&#x8F6C;&#x6210;sitting&#xFF1A; 
+sitten &#xFF08;k-&gt;s&#xFF09; 
+sittin &#xFF08;e-&gt;i&#xFF09; 
+sitting &#xFF08;-&gt;g&#xFF09; 
+&#x6240;&#x4EE5;kitten&#x548C;sitting&#x7684;&#x7F16;&#x8F91;&#x8DDD;&#x79BB;&#x662F;3&#x3002;&#x4FC4;&#x7F57;&#x65AF;&#x79D1;&#x5B66;&#x5BB6;Vladimir Levenshtein&#x5728;1965&#x5E74;&#x63D0;&#x51FA;&#x8FD9;&#x4E2A;&#x6982;&#x5FF5;&#x3002; 
+&#x7ED9;&#x51FA;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;a,b&#xFF0C;&#x6C42;a&#x548C;b&#x7684;&#x7F16;&#x8F91;&#x8DDD;&#x79BB;&#x3002;</p>
+<p>&#x72B6;&#x6001;&#x5B9A;&#x4E49;:Fi,j&#x8868;&#x793A;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x524D;i&#x4E2A;&#x5B57;&#x6BCD;&#x548C;&#x7B2C;&#x4E8C;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x524D;j&#x4E2A;&#x5B57;&#x6BCD;&#x9700;&#x8981;&#x7F16;&#x8F91;&#x7684;&#x6B21;&#x6570;&#xFF0C;&#x6C42;Fn,m&#xFF0C;n&#x548C;m&#x5206;&#x522B;&#x662F;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x957F;&#x5EA6;&#x3002;</p>
+<p>&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x65B9;&#x7A0B;&#xFF1A; 
+&#x5F53;Fi,j-1=Fi-1,j&#x65F6;&#xFF0C;Fi,j=Fi,j-1&#xFF1B; 
+&#x5F53;Fi,j-1&#xFF01;=Fi-1,j&#x65F6;&#xFF0C;Fi,j=min{Fi-1,j-1,Fi,j-1,Fi-1,j}+1.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.util.Scanner;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dp02</span> </span>{
+
+    <span class="hljs-comment">/**
+     * &#x7F16;&#x8F91;&#x8DDD;&#x79BB;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+
+        Scanner sc = <span class="hljs-keyword">new</span> Scanner(System.in);
+        <span class="hljs-keyword">while</span> (sc.hasNext()) {
+
+            dp02(sc.nextLine(), sc.nextLine());
+        }
+
+        sc.close();
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">dp02</span><span class="hljs-params">(String s1, String s2)</span> </span>{
+
+        <span class="hljs-keyword">int</span>[][] dp = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[s1.length() + <span class="hljs-number">1</span>][s2.length() + <span class="hljs-number">1</span>];
+        dp[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>] = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt; dp.length; i++) {
+
+            dp[i][<span class="hljs-number">0</span>] = i;
+        }
+
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; dp[<span class="hljs-number">0</span>].length; i++) {
+
+            dp[<span class="hljs-number">0</span>][i] = i;
+        }
+
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> a = <span class="hljs-number">1</span>; a &lt; dp.length; a++) {
+
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> b = <span class="hljs-number">1</span>; b &lt; dp[<span class="hljs-number">0</span>].length; b++) {
+
+                <span class="hljs-keyword">int</span> c = <span class="hljs-number">1</span>;
+                <span class="hljs-keyword">if</span> (s1.charAt(a - <span class="hljs-number">1</span>) == s2.charAt(b - <span class="hljs-number">1</span>))
+                    c = <span class="hljs-number">0</span>;
+                dp[a][b] = Math.min(dp[a - <span class="hljs-number">1</span>][b - <span class="hljs-number">1</span>] + c, Math.min(dp[a - <span class="hljs-number">1</span>][b] + <span class="hljs-number">1</span>, dp[a][b - <span class="hljs-number">1</span>] + <span class="hljs-number">1</span>));
+            }
+
+        }
+
+        System.out.println(dp[s1.length()][s2.length()]);
+    }
+
+}
+</code></pre>
+<h5 id="03&#x3001;&#x77E9;&#x9635;&#x53D6;&#x6570;&#x95EE;&#x9898;">03&#x3001;&#x77E9;&#x9635;&#x53D6;&#x6570;&#x95EE;&#x9898;</h5>
+<p>&#x4E00;&#x4E2A;N<em>N&#x77E9;&#x9635;&#x4E2D;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x6B63;&#x6574;&#x6570;&#xFF0C;&#x7ECF;&#x8FC7;&#x8FD9;&#x4E2A;&#x683C;&#x5B50;&#xFF0C;&#x5C31;&#x80FD;&#x83B7;&#x5F97;&#x76F8;&#x5E94;&#x4EF7;&#x503C;&#x7684;&#x5956;&#x52B1;&#xFF0C;&#x4ECE;&#x5DE6;&#x4E0A;&#x8D70;&#x5230;&#x53F3;&#x4E0B;&#xFF0C;&#x53EA;&#x80FD;&#x5411;&#x4E0B;&#x5411;&#x53F3;&#x8D70;&#xFF0C;&#x6C42;&#x80FD;&#x591F;&#x83B7;&#x5F97;&#x7684;&#x6700;&#x5927;&#x4EF7;&#x503C;&#x3002;&#x4F8B;&#x5982;&#xFF1A;3 </em> 3&#x7684;&#x65B9;&#x683C;&#x3002;</p>
+<p>1 3 3 
+2 1 3 
+2 2 1</p>
+<p>&#x80FD;&#x591F;&#x83B7;&#x5F97;&#x7684;&#x6700;&#x5927;&#x4EF7;&#x503C;&#x4E3A;&#xFF1A;11&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.util.Scanner;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dp03</span> </span>{
+
+    <span class="hljs-comment">/**
+     * &#x77E9;&#x9635;&#x53D6;&#x6570;&#x95EE;&#x9898;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+
+        Scanner sc = <span class="hljs-keyword">new</span> Scanner(System.in);
+        <span class="hljs-keyword">while</span> (sc.hasNext()){
+
+            <span class="hljs-keyword">int</span> n = sc.nextInt();
+            <span class="hljs-keyword">int</span>[][] dp = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[n][n];
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> a = <span class="hljs-number">0</span>; a &lt; dp.length; a++) {
+
+                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> b = <span class="hljs-number">0</span>; b &lt; dp[<span class="hljs-number">0</span>].length; b++) {
+
+                    <span class="hljs-keyword">int</span> num = sc.nextInt();
+                    <span class="hljs-keyword">if</span>(a == <span class="hljs-number">0</span> &amp;&amp; b == <span class="hljs-number">0</span>){
+                        dp[a][b] = num;
+                    }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(a == <span class="hljs-number">0</span> &amp;&amp; b &gt; <span class="hljs-number">0</span>){
+                        dp[a][b] = dp[a][b-<span class="hljs-number">1</span>] + num;
+                    }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(a &gt; <span class="hljs-number">0</span> &amp;&amp; b == <span class="hljs-number">0</span>){
+                        dp[a][b] = dp[a-<span class="hljs-number">1</span>][b] + num;
+                    }<span class="hljs-keyword">else</span> {
+                        dp[a][b] = Math.max(dp[a-<span class="hljs-number">1</span>][b],dp[a][b-<span class="hljs-number">1</span>]) + num;
+                    }
+
+                }
+
+            }
+
+            System.out.println(dp[n-<span class="hljs-number">1</span>][n-<span class="hljs-number">1</span>]);
+        }
+
+        sc.close();
+    }
+
+}
+</code></pre>
+<h5 id="04&#x3001;&#x80CC;&#x5305;&#x95EE;&#x9898;">04&#x3001;&#x80CC;&#x5305;&#x95EE;&#x9898;</h5>
+<p> &#x5728;N&#x4EF6;&#x7269;&#x54C1;&#x53D6;&#x51FA;&#x82E5;&#x5E72;&#x4EF6;&#x653E;&#x5728;&#x5BB9;&#x91CF;&#x4E3A;W&#x7684;&#x80CC;&#x5305;&#x91CC;&#xFF0C;&#x6BCF;&#x4EF6;&#x7269;&#x54C1;&#x7684;&#x4F53;&#x79EF;&#x4E3A;W1&#xFF0C;W2&#x2026;&#x2026;Wn&#xFF08;Wi&#x4E3A;&#x6574;&#x6570;&#xFF09;&#xFF0C;&#x4E0E;&#x4E4B;&#x76F8;&#x5BF9;&#x5E94;&#x7684;&#x4EF7;&#x503C;&#x4E3A;P1,P2&#x2026;&#x2026;Pn&#xFF08;Pi&#x4E3A;&#x6574;&#x6570;&#xFF09;&#x3002;&#x6C42;&#x80CC;&#x5305;&#x80FD;&#x591F;&#x5BB9;&#x7EB3;&#x7684;&#x6700;&#x5927;&#x4EF7;&#x503C;&#x3002; </p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.util.Scanner;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dp04</span> </span>{
+
+    <span class="hljs-comment">/**
+     * &#x80CC;&#x5305;&#x95EE;&#x9898;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+
+        Scanner sc = <span class="hljs-keyword">new</span> Scanner(System.in);
+
+        <span class="hljs-keyword">while</span> (sc.hasNext()) {
+
+            <span class="hljs-keyword">int</span> n = sc.nextInt();
+            <span class="hljs-keyword">int</span> v = sc.nextInt();
+            <span class="hljs-keyword">int</span>[] dp = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[v + <span class="hljs-number">1</span>];
+            <span class="hljs-keyword">int</span>[] price = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[n + <span class="hljs-number">1</span>];
+            <span class="hljs-keyword">int</span>[] weight = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[n + <span class="hljs-number">1</span>];
+            <span class="hljs-keyword">long</span> max = <span class="hljs-number">0</span>;
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n + <span class="hljs-number">1</span>; i++) {
+                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = v; j &gt; <span class="hljs-number">0</span>; j--) {
+                    <span class="hljs-keyword">if</span> (j - weight[i] &gt; <span class="hljs-number">0</span>)
+                        dp[j] = Math.max(dp[j], dp[j - weight[i]] + price[i]);
+                    <span class="hljs-keyword">else</span>
+                        dp[j] = dp[i];
+                }
+
+            }
+
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; v + <span class="hljs-number">1</span>; i++) {
+
+                max = max &gt; dp[i] ? max : dp[i];
+            }
+
+            System.out.println(max);
+        }
+
+        sc.close();
+    }
+}
+</code></pre>
+<h5 id="05&#x3001;&#x6700;&#x957F;&#x9012;&#x589E;&#x5B50;&#x5E8F;&#x5217;">05&#x3001;&#x6700;&#x957F;&#x9012;&#x589E;&#x5B50;&#x5E8F;&#x5217;</h5>
+<p> &#x7ED9;&#x51FA;&#x957F;&#x5EA6;&#x4E3A;N&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x627E;&#x51FA;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x6700;&#x957F;&#x9012;&#x589E;&#x5B50;&#x5E8F;&#x5217;&#x3002; 
+(&#x9012;&#x589E;&#x5B50;&#x5E8F;&#x5217;&#x662F;&#x6307;&#xFF0C;&#x5B50;&#x5E8F;&#x5217;&#x7684;&#x5143;&#x7D20;&#x662F;&#x9012;&#x589E;&#x7684;&#xFF09; 
+&#x4F8B;&#x5982;&#xFF1A;5 1 6 8 2 4 5 10&#xFF0C;&#x6700;&#x957F;&#x9012;&#x589E;&#x5B50;&#x5E8F;&#x5217;&#x662F;1 2 4 5 10&#x3002; </p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.util.Arrays;
+<span class="hljs-keyword">import</span> java.util.Scanner;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dp05</span> </span>{
+
+    <span class="hljs-comment">/**
+     * &#x6700;&#x957F;&#x9012;&#x589E;&#x5B50;&#x5E8F;&#x5217;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+
+        Scanner sc = <span class="hljs-keyword">new</span> Scanner(System.in);
+        <span class="hljs-keyword">while</span> (sc.hasNext()) {
+
+            <span class="hljs-keyword">int</span> n = sc.nextInt();
+            <span class="hljs-keyword">int</span>[] arr = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[n];
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) {
+
+                arr[i] = sc.nextInt();
+            }
+            dp05(arr);
+        }
+
+        sc.close();
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">dp05</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] arr)</span> </span>{
+
+        <span class="hljs-keyword">int</span>[] dp = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[arr.length];
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; dp.length; i++) {
+
+            dp[i] = <span class="hljs-number">1</span>;
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; i; j++) {
+
+                <span class="hljs-keyword">if</span> (arr[i] &gt; arr[j]) {
+                    dp[i] = Math.max(dp[i], dp[j] + <span class="hljs-number">1</span>);
+                }
+
+            }
+
+        }
+
+        Arrays.sort(dp);
+        System.out.println(dp[dp.length - <span class="hljs-number">1</span>]);
+    }
+
+}
+</code></pre>
+<h5 id="06&#x3001;&#x6700;&#x5927;&#x5B50;&#x6BB5;&#x548C;">06&#x3001;&#x6700;&#x5927;&#x5B50;&#x6BB5;&#x548C;</h5>
+<p> N&#x4E2A;&#x6574;&#x6570;&#x7EC4;&#x6210;&#x7684;&#x5E8F;&#x5217;a[1],a[2],a[3],&#x2026;,a[n]&#xFF0C;&#x6C42;&#x8BE5;&#x5E8F;&#x5217;&#x5982;a[i]+a[i+1]+&#x2026;+a[j]&#x7684;&#x8FDE;&#x7EED;&#x5B50;&#x6BB5;&#x548C;&#x7684;&#x6700;&#x5927;&#x503C;&#x3002; 
+&#x5F53;&#x6240;&#x7ED9;&#x7684;&#x6574;&#x6570;&#x5747;&#x4E3A;&#x8D1F;&#x6570;&#x65F6;&#x548C;&#x4E3A;0&#x3002; 
+&#x4F8B;&#x5982;&#xFF1A;-2,11,-4,13,-5,-2&#xFF0C;&#x548C;&#x6700;&#x5927;&#x7684;&#x5B50;&#x6BB5;&#x4E3A;&#xFF1A;11,-4,13&#x3002;&#x548C;&#x4E3A;20&#x3002; </p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.util.Scanner;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dp06</span> </span>{
+
+    <span class="hljs-comment">/**
+     * &#x6700;&#x5927;&#x8FDE;&#x7EED;&#x5B50;&#x4E32;&#x548C;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+
+        Scanner sc = <span class="hljs-keyword">new</span> Scanner(System.in);
+
+        <span class="hljs-keyword">while</span> (sc.hasNext()) {
+
+            <span class="hljs-keyword">int</span> n = sc.nextInt();
+            <span class="hljs-keyword">int</span>[] arr = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[n];
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) {
+                arr[i] = sc.nextInt();
+            }
+
+            dp06(arr);
+        }
+
+        sc.close();
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">dp06</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] arr)</span> </span>{
+
+        <span class="hljs-keyword">int</span> maxSum = Integer.MIN_VALUE;
+        <span class="hljs-keyword">int</span> nowSum = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i : arr) {
+
+            nowSum = nowSum + i;
+            <span class="hljs-keyword">if</span> (nowSum &gt; maxSum)
+                maxSum = nowSum;
+            <span class="hljs-keyword">if</span> (nowSum &lt; <span class="hljs-number">0</span>)
+                nowSum = <span class="hljs-number">0</span>;
+        }
+
+        System.out.println(maxSum);
+    }
+
+}
+</code></pre>
+<h5 id="07&#x3001;&#x6700;&#x957F;&#x516C;&#x5171;&#x5B50;&#x5E8F;&#x5217;lcs">07&#x3001;&#x6700;&#x957F;&#x516C;&#x5171;&#x5B50;&#x5E8F;&#x5217;Lcs</h5>
+<p>&#x7ED9;&#x51FA;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;A B&#xFF0C;&#x6C42;A&#x4E0E;B&#x7684;&#x6700;&#x957F;&#x516C;&#x5171;&#x5B50;&#x5E8F;&#x5217;&#xFF08;&#x5B50;&#x5E8F;&#x5217;&#x4E0D;&#x8981;&#x6C42;&#x662F;&#x8FDE;&#x7EED;&#x7684;&#xFF09;&#x3002; 
+&#x6BD4;&#x5982;&#x4E24;&#x4E2A;&#x4E32;&#x4E3A;&#xFF1A;</p>
+<p>abcicba 
+abdkscab</p>
+<p>ab&#x662F;&#x4E24;&#x4E2A;&#x4E32;&#x7684;&#x5B50;&#x5E8F;&#x5217;&#xFF0C;abc&#x4E5F;&#x662F;&#xFF0C;abca&#x4E5F;&#x662F;&#xFF0C;&#x5176;&#x4E2D;abca&#x662F;&#x8FD9;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x6700;&#x957F;&#x7684;&#x5B50;&#x5E8F;&#x5217;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.util.Scanner;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dp07</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+
+        <span class="hljs-comment">/**
+         * &#x6700;&#x957F;&#x516C;&#x5171;&#x5B50;&#x5E8F;&#x5217;Lcs
+         */</span>
+        Scanner sc = <span class="hljs-keyword">new</span> Scanner(System.in);
+        <span class="hljs-keyword">while</span> (sc.hasNext()) {
+
+            String s1 = sc.nextLine();
+            String s2 = sc.nextLine();
+
+            <span class="hljs-comment">//&#x6700;&#x957F;&#x516C;&#x5171;&#x5B50;&#x5E8F;&#x5217;Lcs</span>
+            dp07(s1, s2);
+        }
+
+        sc.close();
+    }
+
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">dp07</span><span class="hljs-params">(String s1, String s2)</span> </span>{
+
+        <span class="hljs-keyword">int</span>[][] dp = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[s1.length() + <span class="hljs-number">1</span>][s2.length() + <span class="hljs-number">1</span>];
+        dp[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>] = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt; dp.length; i++) {
+            dp[i][<span class="hljs-number">0</span>] = <span class="hljs-number">0</span>;
+        }
+
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; dp[<span class="hljs-number">0</span>].length; i++) {
+            dp[<span class="hljs-number">0</span>][i] = <span class="hljs-number">0</span>;
+        }
+
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> a = <span class="hljs-number">1</span>; a &lt; dp.length; a++) {
+
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> b = <span class="hljs-number">1</span>; b &lt; dp[<span class="hljs-number">0</span>].length; b++) {
+
+                <span class="hljs-keyword">int</span> c = <span class="hljs-number">0</span>;
+                <span class="hljs-keyword">if</span> (s1.charAt(a - <span class="hljs-number">1</span>) == s2.charAt(b - <span class="hljs-number">1</span>))
+                    c = <span class="hljs-number">1</span>;
+                dp[a][b] = Math.max(dp[a - <span class="hljs-number">1</span>][b - <span class="hljs-number">1</span>] + c, Math.max(dp[a - <span class="hljs-number">1</span>][b], dp[a][b - <span class="hljs-number">1</span>]));
+            }
+        }
+
+        System.out.println(dp[s1.length()][s2.length()]);
+    }
+}
+</code></pre>
+<h5 id="08&#x3001;&#x6B63;&#x6574;&#x6570;&#x5206;&#x7EC4;">08&#x3001;&#x6B63;&#x6574;&#x6570;&#x5206;&#x7EC4;</h5>
+<p> &#x5C06;&#x4E00;&#x5806;&#x6B63;&#x6574;&#x6570;&#x5206;&#x4E3A;2&#x7EC4;&#xFF0C;&#x8981;&#x6C42;2&#x7EC4;&#x7684;&#x548C;&#x76F8;&#x5DEE;&#x6700;&#x5C0F;&#x3002; 
+&#x4F8B;&#x5982;&#xFF1A;1 2 3 4 5&#xFF0C;&#x5C06;1 2 4&#x5206;&#x4E3A;1&#x7EC4;&#xFF0C;3 5&#x5206;&#x4E3A;1&#x7EC4;&#xFF0C;&#x4E24;&#x7EC4;&#x548C;&#x76F8;&#x5DEE;1&#xFF0C;&#x662F;&#x6240;&#x6709;&#x65B9;&#x6848;&#x4E2D;&#x76F8;&#x5DEE;&#x6700;&#x5C11;&#x7684;&#x3002; </p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.util.Scanner;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dp08</span> </span>{
+
+    <span class="hljs-comment">/**
+     * &#x6B63;&#x6574;&#x6570;&#x5206;&#x7EC4;&#x8981;&#x6C42;&#x4E24;&#x7EC4;&#x5DEE;&#x6700;&#x5C0F;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+
+        Scanner sc = <span class="hljs-keyword">new</span> Scanner(System.in);
+        <span class="hljs-keyword">while</span> (sc.hasNext()) {
+
+            <span class="hljs-keyword">int</span> n = sc.nextInt();
+            <span class="hljs-keyword">long</span> sum = <span class="hljs-number">0</span>;
+            <span class="hljs-keyword">int</span> max = <span class="hljs-number">0</span>;
+            <span class="hljs-keyword">int</span>[] nums = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[n];
+
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) {
+                nums[i] = sc.nextInt();
+                sum += nums[i];
+            }
+
+            <span class="hljs-keyword">int</span>[] dp = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[(<span class="hljs-keyword">int</span>) (sum / <span class="hljs-number">2</span> + <span class="hljs-number">1</span>)];
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) {
+                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = (<span class="hljs-keyword">int</span>) (sum / <span class="hljs-number">2</span>); j &gt; <span class="hljs-number">0</span>; j--) {
+                    <span class="hljs-keyword">if</span> (j &gt;= nums[i]) {
+                        dp[j] = Math.max(dp[j], dp[j - nums[i]] + nums[i]);
+                    }
+                }
+            }
+
+            <span class="hljs-comment">//&#x83B7;&#x53D6;&#x6570;&#x636E;&#x7684;&#x5927;&#x5C0F;</span>
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt; sum / <span class="hljs-number">2</span> + <span class="hljs-number">1</span>; i++) {
+                max = max &gt; dp[i] ? max : dp[i];
+            }
+            System.out.println(Math.abs((sum - max) - max));
+        }
+        sc.close();
+    }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="02_java.html" class="navigation navigation-prev " aria-label="Previous page: java">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="03_python.html" class="navigation navigation-next " aria-label="Next page: python">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"dp","level":"1.3","depth":1,"next":{"title":"python","level":"1.4","depth":1,"path":"03_python.md","ref":"03_python.md","articles":[]},"previous":{"title":"java","level":"1.2","depth":1,"path":"02_java.md","ref":"02_java.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"97_dp.md","mtime":"2022-04-17T09:32:32.790Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-17T09:38:51.972Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
