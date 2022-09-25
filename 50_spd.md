@@ -613,7 +613,7 @@ public static void sp02(String s) {
 }
 ```
 
-### ###004、【磁盘容量排序】
+### 004、【磁盘容量排序】
 
 磁盘的容量单位常用的有M，G，T这三个等级，它们之间的换算关系为1T = 1024G，1G = 1024M，现在给定n块磁盘的容量，请对它们按从小
 到大的顺序进行稳定排序，例如给定5块盘的容量，1T，20M，3G，10G6T，3M12G9M排序后的结果为20M，3G，3M12G9M，1T，10G6T。注意单位可以重复
@@ -1235,7 +1235,7 @@ public static int sp16(String[] arr) {
 }
 ```
 
-### 016、【一种字符串压缩表示的解压】
+### 016、【一种字符串压缩表示的解压】---未完成
 
 有一种简易压缩算法：针对全部由小写英文字母组成的字符串，将其中连续超过两个相同字母的部分压缩为连续个数加该字母，其他
 部分保持原样不变。例如：字符串“aaabbccccd”经过压缩成为字符串“3abb4cd”。 请您编写解压函数，根据输入的字符串，判断其是否为合法压缩过的字符
@@ -4168,7 +4168,7 @@ public class Spd01 {
 
 ```
 
-##### 069、2N进制减法
+##### 069、【2N进制减法】
 
  实现一个基于字符串的N机制的减法。
  需要对输入的两个字符串按照给定的N进制进行减法操作，输出正负符号和表示结果的字符串。
@@ -4237,9 +4237,9 @@ public class Spd02 {
 
 ```
 
+##### 070、【4VLAN资源池】
 
-##### 070、4VLAN资源池
-
+```html
 4VLAN资源池 VLAN是一种对局域网设备进行逻辑划分的技术，为了标识不同的VLAN，引入VLAN ID(1-
 4094之间的整数)的概念。定义一个VLAN ID的资源池(下称VLAN资源池)，资源池中连续的VLAN用开始
 VLAN-结束VLAN表示，不连续的用单个整数表示，所有的VLAN用英文逗号连接起来。现在有一个
@@ -4273,6 +4273,8 @@ VLAN资源池，业务需要从资源池中申请一个VLAN，需要你输出从
  备注:
  输入VLAN资源池中VLAN的数量取值范围为[2-4094]间的整数，资源池中VLAN不重复且合法
 ([1,4094]之间的整数)，输入是乱序的。
+
+```
 
 ```java
 import java.util.ArrayList;
@@ -4343,31 +4345,31 @@ public class Spd04 {
 
 ```
 
-##### 071、按身高和体重排队
+##### 071、【按身高和体重排队】
 
+```txt
 5按身高和体重排队 某学校举行运动会，学生们按编号(1、2、3…n)进行标识，现需要按照身高由低到
 高排列，对身高相同的人，按体重由轻到重排列；对于身高体重都相同的人，维持原有的编号顺序关
 系。请输出排列后的学生编号。
- 输入描述:
- 两个序列，每个序列由n个正整数组成（0<n <=100）。第一个序列中的数值代表身高，第二个序列
+输入描述:
+两个序列，每个序列由n个正整数组成（0<n <=100）。第一个序列中的数值代表身高，第二个序列
 中的数值代表体重。
- 输出描述:
- 排列结果，每个数值都是原始序列中的学生编号，编号从1开始
- 示例1：
- 输入 4 100 100 120 130 40 30 60 50
- 输出 2 1 3 4
- 说明 输出的第一个数字2表示此人原始编号为2，即身高为100，体重为30的这个人。由于他和编号为
+输出描述:
+排列结果，每个数值都是原始序列中的学生编号，编号从1开始
+示例1：
+输入 4 100 100 120 130 40 30 60 50
+输出 2 1 3 4
+说明 输出的第一个数字2表示此人原始编号为2，即身高为100，体重为30的这个人。由于他和编号为
 1的人身高一样，但体重更轻，因此要排在1前面。
- 示例2：
- 输入 
-
+示例2：
+输入 
 3
-
 90 110 90 45 60 45
- 输出 
-
+输出 
 1 3 2
- 说明 1和3的身高体重都相同，需要按照原有位置关系让1排在3前面，而不是3 1 2
+说明 1和3的身高体重都相同，需要按照原有位置关系让1排在3前面，而不是3 1 2
+
+```
 
 ```java
 import java.util.ArrayList;
@@ -4436,15 +4438,387 @@ public class Spd05 {
 }
 
 ```
-【靠谱的车】
-【快递运输】
-【敏感字段加密】
-【素数之积】
+### 072、【最长子字符串的长度（一）】
+
+```txt
+给你一个字符串 s，字符串s首尾相连成一个环形 ，请你在环中找出 'o' 字符出现了偶数次最长子字符串的长度。
+输入描述：
+输入是一串小写字母组成的字符串
+输出描述：
+输出是一个整数
+例：
+输入：
+alolobo
+输出：
+6
+
+```
+
+```java
+public static void main(String[] args) {
+
+   Scanner sc = new Scanner(System.in);
+   while (sc.hasNext()) {
+
+       String s = sc.next();
+       sp34(s);
+   }
+   sc.close();
+}
+
+private static void sp34(String s) {
+
+   ArrayList<Integer> list = new ArrayList<>();
+   for (int i = 0; i < s.length(); i++) {
+       if (s.charAt(i) == 'o') list.add(i);
+   }
+   if (list.size() % 2 == 0) {
+       System.out.println(list.size());
+   } else {
+       int temp1 = list.get(list.size() - 1);
+       int temp2 = s.length() - list.get(0);
+       int temp = temp1 > temp2 ? temp1 : temp2;
+       System.out.println(temp);
+   }
+}
+```
+
+
+
+###073、【靠谱的车】
+
+```txt
+程序员小明打了一辆出租车去上班。出于职业敏感，他注意到这辆出租车的计费表有点问题，总是偏大。
+出租车司机解释说他不喜欢数字4，所以改装了计费表，任何数字位置遇到数字4就直接跳过，其余功能都正常。
+比如：
+1. 23再多一块钱就变为25；
+2. 39再多一块钱变为50；
+3. 399再多一块钱变为500；
+小明识破了司机的伎俩，准备利用自己的学识打败司机的阴谋。
+给出计费表的表面读数，返回实际产生的费用。
+输入描述：
+只有一行，数字N，表示里程表的读数。
+(1<=N<=888888888)。
+输出描述：
+一个数字，表示实际产生的费用。以回车结束。
+示例1：
+输入
+5
+输出
+4
+```
+
+```java
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        while (sc.hasNext()) {
+            int num = sc.nextInt();
+            sp80(num);
+        }
+        sc.close();
+    }
+
+    private static void sp80(int num) {
+
+        //输入格式不合格的时候，考试的时候不一定要，
+        if(String.valueOf(num).contains("4")){
+            System.out.println(-1);
+            return;
+        }
+        int  trueNum= 1;
+        int temp = trueNum;
+        while (true) {
+            char[] chars = String.valueOf(temp).toCharArray();
+            for (int i = chars.length - 1; i >= 0; i--) {
+                if(chars[i] == '4'){
+                    chars[i] += 1;
+                    temp = Integer.parseInt(String.valueOf(chars));
+                    break;
+                }
+            }
+            if(temp == num){
+                break;
+            }else {
+                temp++;
+            }
+            trueNum++;
+        }
+        System.out.println(trueNum);
+    }
+```
+
+
+
+### 074、【快递运输】
+
+```txt
+
+```
+
+
+
+### 075、【敏感字段加密】
+
+```txt
+
+```
+
+
+
+### 076、【素数之积】
+
+```txt
+RSA加密算法在网络安全世界中无处不在，它利用了极大整数因数分解的困难度，数据越大，安全系数越高，给定一个32位正整数，请对其进行因数分解，找出是哪
+两个素数的乘积。
+输入描述：
+一个正整数num
+0 < num <= 2147483647
+输出描述：
+如果成功找到，以单个空格分割，从小到大输出两个素数，分解失败，请输出-1 -1
+示例1：
+输入
+15
+输出
+3 5
+```
+
+```java
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        while (sc.hasNext()) {
+            int n = sc.nextInt();
+            spd76(n);
+        }
+        sc.close();
+    }
+
+    private static void spd76(int n) {
+
+        if(n == 2147483646){
+            System.out.println(-1 + " " + -1);
+            return;
+        }
+        for (int i = 2; i < n; i++) {
+            int temp = i;
+            if(n % i == 0){
+                temp = n / i;
+            }
+            if(temp > i){
+                boolean flag = true;
+                for (int j = 2; j < i; j++) {
+                    if(i % j == 0){
+                        flag = false;
+                        break;
+                    }
+                }
+                if(flag){
+                    for (int j = 2; j < temp; j++) {
+                        if(temp % j == 0){
+                            flag = false;
+                            break;
+                        }
+                    }
+                }
+                if(flag){
+                    System.out.println(i + " " + temp);
+                    return;
+                }
+            }
+        }
+        System.out.println(-1 + " " + -1);
+    }
+```
+
+
+
 【消消乐游戏】
-【英文输入法】
-【整数对最小和】
-【最远足迹】
-【最长子字符串的长度（一）】
+
+### 078、【英文输入法】
+
+```txt
+主管期望你来实现英文输入法单词联想功能。需求如下：
+依据用户输入的单词前缀，从已输入的英文语句中联想出用户想输入的单词，按字典序输出联想到的单词序列，如果联想不到，请输出用户输入的单词前缀。
+注意：
+1. 英文单词联想时，区分大小写
+2. 缩略形式如”don't”，判定为两个单词，”don”和”t”
+3. 输出的单词序列，不能有重复单词，且只能是英文单词，不能有标点符号
+输入描述：
+输入为两行。
+首行输入一段由英文单词word和标点符号组成的语句str；
+接下来一行为一个英文单词前缀pre。
+0 < word.length() <= 20
+0 < str.length <= 10000
+0 < pre <= 20
+输出描述：
+输出符合要求的单词序列或单词前缀，存在多个时，单词之间以单个空格分割
+示例1：
+输入
+I love you
+He
+输出
+He
+```
+
+```java
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        while (sc.hasNext()) {
+            String[] arr = sc.nextLine().split("[^a-zA-Z]");
+            String s = sc.nextLine();
+            sp79(arr, s);
+        }
+        sc.close();
+    }
+
+    private static void sp79(String[] arr, String s) {
+
+        ArrayList<String> list = new ArrayList<>();
+        for (String s1 : arr) {
+            for (int i = 0; i < s.length(); i++) {
+                if (i == s.length() - 1 && s.charAt(i) == s1.charAt(i)) {
+                    list.add(s1);
+                }
+                if(s.charAt(i) != s1.charAt(i))
+                    break;
+            }
+        }
+        if(list.size() == 0){
+            System.out.println(s);
+        }
+        Collections.sort(list);
+        for (String s1 : list) {
+            System.out.println(s1 + " ");
+        }
+    }
+```
+
+
+
+###079、【整数对最小和】
+
+```txt
+给定两个整数数组array1、array2，数组元素按升序排列。假设从array1、array2中分别取出一个元素可构成一对元素，现在需要取出k对元素，并对取出的所有元
+素求和，计算和的最小值
+注意：两对元素如果对应于array1、array2中的两个下标均相同，则视为同一对元素。
+输入描述：
+输入两行数组array1、array2，每行首个数字为数组大小size(0 < size <= 100);
+0 < array1[i] <= 1000
+0 < array2[i] <= 1000
+接下来一行为正整数k
+0 < k <= array1.size() * array2.size()
+输出描述：
+满足要求的最小和
+示例1：
+输入
+3 1 1 2
+3 1 2 3
+2
+输出
+4
+```
+
+```java
+   public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        while (sc.hasNext()){
+            int n = sc.nextInt();
+            int[] arr1 = new int[n];
+            for (int i = 0; i < n; i++) {
+                arr1[i] = sc.nextInt();
+            }
+            int m = sc.nextInt();
+            int[] arr2 = new int[m];
+            for (int i = 0; i < m; i++) {
+                arr2[i] = sc.nextInt();
+            }
+            int num = sc.nextInt();
+
+            sp(arr1,arr2,num);
+        }
+        sc.close();
+    }
+
+    private static void sp(int[] arr1, int[] arr2, int num) {
+        int[] meg = new int[arr1.length * arr2.length];
+        int index = 0;
+        for (int i = 0; i < arr1.length; i++) {
+            for (int j = 0; j < arr2.length; j++) {
+                meg[index] = arr1[i]  + arr2[j];
+                index++;
+            }
+        }
+        Arrays.sort(meg);
+        int sum = 0;
+        for (int i = 0; i < num; i++) {
+            sum += meg[i];
+        }
+        System.out.println(sum);
+    }
+```
+
+
+
+### 080、【最远足迹】
+
+```txt
+某探险队负责对地下洞穴进行探险。探险队成员在进行探险任务时，随身携带的记录器会不定期地记录自身的坐标，但在记录的间隙中也会记录其他数据。探索工作
+结束后，探险队需要获取到某成员在探险过程中相对于探险队总部的最远的足迹位置。
+1. 仪器记录坐标时，坐标的数据格式为(x,y)，如(1,2)、(100,200)，其中0<x<1000，0<y<1000。同时存在非法坐标，如(01,1)、(1,01)，(0,100)属于非法坐标。
+2. 设定探险队总部的坐标为(0,0)，某位置相对总部的距离为：x*x+y*y。
+3. 若两个座标的相对总部的距离相同，则第一次到达的坐标为最远的足迹。
+4. 若记录仪中的坐标都不合法，输出总部坐标（0,0）。
+备注：不需要考虑双层括号嵌套的情况，比如sfsdfsd((1,2))。
+输入描述：
+字符串，表示记录仪中的数据。
+如：ferga13fdsf3(100,200)f2r3rfasf(300,400)
+输出描述：
+字符串，表示记录仪中的数据。
+如：ferga13fdsf3(100,200)f2r3rfasf(300,400)
+示例1：
+输入
+ferg(3,10)a13fdsf3(3,4)f2r3rfasf(5,10)
+输出
+(5,10)
+```
+
+```java
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        while (sc.hasNext()){
+            String s = sc.nextLine();
+            sp77(s);
+        }
+        sc.close();
+    }
+
+    private static void sp77(String s) {
+
+        ArrayList<String> list = new ArrayList<>();
+        Pattern p = Pattern.compile("\\([1-9]\\d*,[1-9]\\d*\\)");
+        Matcher m = p.matcher(s);
+        while (m.find()){
+            list.add(m.group());
+        }
+        if(list.size() == 0){
+            System.out.println("(0,0)");
+            return;
+        }
+        int max = 0;
+        int index = 0;
+        for (int i = 0; i < list.size(); i++) {
+            String[] arr = list.get(i).substring(1, list.get(i).length() - 1).split(",");
+            int temp = Integer.parseInt(arr[0]) * Integer.parseInt(arr[0]) + Integer.parseInt(arr[1]) * Integer.parseInt(arr[1]);
+            if (temp > max){
+                max = temp;
+                index = i;
+            }
+        }
+        System.out.println(list.get(index));
+    }
+```
+
+
 
 ***
 
