@@ -1,4 +1,5 @@
-<a href="/04_interview/spd.doc">spd.pdf</a><br/>
+<a href="/04_interview/spd.pdf">spd</a><br/>
+<a href="/04_interview/自己面试总结.pdf">自己面试总结</a><br/>
 <a href="/04_interview/人事面试学问70题.pdf">人事面试常问70题</a><br/>
 <a href="/04_interview/115个Java面试题和答案.pdf">115个Java面试题和答案</a><br/>
 <a href="/04_interview/应聘时最漂亮的回答.pdf">应聘时最漂亮的回答.docx</a><br/>
