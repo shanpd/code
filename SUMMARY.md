@@ -1,20 +1,22 @@
 # Summary
 
-* [git](README.md)
+* [README](README.md)
 
-* [java](02_java.md)
+* [02_java](02_java.md)
 
-* [python](03_python.md)
+* [03_python](03_python.md)
 
-* [interview](04_interview.md)
+* [04_interview](04_interview.md)
 
-* [spd](50_spd.md)
+* [06_softwaretest](06_softwaretest.md)
 
-* [shares](97_shares.md)
+* [50_spd](50_spd.md)
 
-* [medicine](98_medicine.md)
+* [97_shares](97_shares.md)
 
-* [psw](99_passwd.md)
+* [98_medicine](98_medicine.md)
+
+* [99_passwd](99_passwd.md)
 
 * git add .
 
@@ -22,7 +24,4 @@
 
 * git push origin master
 
-  ​
-
-  ​
 
