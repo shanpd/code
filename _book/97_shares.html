@@ -128,12 +128,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="04_interview.html">
+        <li class="chapter " data-level="1.4" data-path="04_api.html">
             
-                <a href="04_interview.html">
+                <a href="04_api.html">
             
                     
-                    04_interview
+                    04_api
             
                 </a>
             
@@ -141,9 +141,22 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="06_softwaretest.html">
+        <li class="chapter " data-level="1.5" data-path="05_web.html">
             
-                <a href="06_softwaretest.html">
+                <a href="05_web.html">
+            
+                    
+                    05_web
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="06_softwaretest.md">
+            
+                <span>
             
                     
                     06_softwaretest
@@ -154,7 +167,33 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="50_spd.html">
+        <li class="chapter " data-level="1.7" data-path="48_interview.html">
+            
+                <a href="48_interview.html">
+            
+                    
+                    48_interview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="10_mysql.html">
+            
+                <a href="10_mysql.html">
+            
+                    
+                    10_mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="50_spd.html">
             
                 <a href="50_spd.html">
             
@@ -167,7 +206,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.7" data-path="97_shares.html">
+        <li class="chapter active" data-level="1.10" data-path="97_shares.html">
             
                 <a href="97_shares.html">
             
@@ -180,7 +219,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="98_medicine.html">
+        <li class="chapter " data-level="1.11" data-path="98_medicine.html">
             
                 <a href="98_medicine.html">
             
@@ -193,7 +232,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="99_passwd.html">
+        <li class="chapter " data-level="1.12" data-path="99_passwd.html">
             
                 <a href="99_passwd.html">
             
@@ -206,7 +245,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" >
+        <li class="chapter " data-level="1.13" >
             
                 <span>
             
@@ -219,7 +258,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11" >
+        <li class="chapter " data-level="1.14" >
             
                 <span>
             
@@ -232,7 +271,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12" >
+        <li class="chapter " data-level="1.15" >
             
                 <span>
             
@@ -439,7 +478,98 @@
 <p>1&#x3001;&#x6B62;&#x635F;&#x5356;&#x51FA;&#x3001;&#x5F53;&#x80A1;&#x4EF7;&#x5E95;&#x4E8E;&#x4E70;&#x5165;&#x90A3;&#x5929;&#x7684;&#x6700;&#x4F4E;&#x5356;&#x51FA;&#x6216;&#x8005;macd&#x51FA;&#x73B0;&#x6B7B;&#x53C9;</p>
 <p>2&#x3001; &#x76C8;&#x5229;&#x5356;&#x51FA;&#x3001;&#x91CF;&#x4EF7;&#x51FA;&#x73B0;&#x80CC;&#x79BB;&#x6216;&#x8005;macd&#x51FA;&#x73B0;&#x6B7B;&#x53C9;</p>
 </blockquote>
-
+<h3 id="100&#x3001;&#x6307;&#x6807;&#x7F16;&#x5199;">100&#x3001;&#x6307;&#x6807;&#x7F16;&#x5199;</h3>
+<p>&#x4E00;&#x3001;&#x5996;&#x80A1;&#x4E00;</p>
+<pre><code>AA:=REF(HHV(V,25),5);
+BB:=MA(V,5);
+BC:=REF(V,5)=AA AND V&lt;1.5*REF(BB,6) AND AA&gt;4*REF(BB,6) AND C&gt;REF(L,1) AND C&lt;REF(O,5);
+BD:=REF(V,6)=AA AND V&lt;1.5*REF(BB,7) AND AA&gt;4*REF(BB,7) AND C&gt;REF(L,1) AND C&lt;REF(O,6);
+BE:=REF(V,7)=AA AND V&lt;1.5*REF(BB,8) AND AA&gt;4*REF(BB,8) AND C&gt;REF(L,1) AND C&lt;REF(O,7);
+BF:=REF(V,8)=AA AND V&lt;1.5*REF(BB,9) AND AA&gt;4*REF(BB,9) AND C&gt;REF(L,1) AND C&lt;REF(O,8);
+BG:=REF(V,9)=AA AND V&lt;1.5*REF(BB,10) AND AA&gt;4*REF(BB,10) AND C&gt;REF(L,1) AND C&lt;REF(O,9);
+BH:=REF(V,10)=AA AND V&lt;1.5*REF(BB,11) AND AA&gt;4*REF(BB,11) AND C&gt;REF(L,1) AND C&lt;REF(O,10);
+BI:=REF(V,11)=AA AND V&lt;1.5*REF(BB,12) AND AA&gt;4*REF(BB,12) AND C&gt;REF(L,1) AND C&lt;REF(O,11);
+BJ:=REF(V,12)=AA AND V&lt;1.5*REF(BB,13) AND AA&gt;4*REF(BB,13) AND C&gt;REF(L,1) AND C&lt;REF(O,12);
+BK:=REF(V,13)=AA AND V&lt;1.5*REF(BB,14) AND AA&gt;4*REF(BB,14) AND C&gt;REF(L,1) AND C&lt;REF(O,13);
+BL:=REF(V,14)=AA AND V&lt;1.5*REF(BB,15) AND AA&gt;4*REF(BB,15) AND C&gt;REF(L,1) AND C&lt;REF(O,14);
+BM:=REF(V,15)=AA AND V&lt;1.5*REF(BB,16) AND AA&gt;4*REF(BB,16) AND C&gt;REF(L,1) AND C&lt;REF(O,15);
+BN:=REF(V,16)=AA AND V&lt;1.5*REF(BB,17) AND AA&gt;4*REF(BB,17) AND C&gt;REF(L,1) AND C&lt;REF(O,16);
+BO:=REF(V,17)=AA AND V&lt;1.5*REF(BB,18) AND AA&gt;4*REF(BB,18) AND C&gt;REF(L,1) AND C&lt;REF(O,17);
+BP:=REF(V,18)=AA AND V&lt;1.5*REF(BB,19) AND AA&gt;4*REF(BB,19) AND C&gt;REF(L,1) AND C&lt;REF(O,18);
+BQ:=REF(V,19)=AA AND V&lt;1.5*REF(BB,20) AND AA&gt;4*REF(BB,20) AND C&gt;REF(L,1) AND C&lt;REF(O,19);
+BR:=REF(V,20)=AA AND V&lt;1.5*REF(BB,21) AND AA&gt;4*REF(BB,21) AND C&gt;REF(L,1) AND C&lt;REF(O,20);
+BS:=REF(V,21)=AA AND V&lt;1.5*REF(BB,22) AND AA&gt;4*REF(BB,22) AND C&gt;REF(L,1) AND C&lt;REF(O,21);
+BT:=REF(V,22)=AA AND V&lt;1.5*REF(BB,23) AND AA&gt;4*REF(BB,23) AND C&gt;REF(L,1) AND C&lt;REF(O,22);
+BU:=REF(V,23)=AA AND V&lt;1.5*REF(BB,24) AND AA&gt;4*REF(BB,24) AND C&gt;REF(L,1) AND C&lt;REF(O,23);
+BV:=REF(V,24)=AA AND V&lt;1.5*REF(BB,25) AND AA&gt;4*REF(BB,25) AND C&gt;REF(L,1) AND C&lt;REF(O,24);
+BW:=REF(V,25)=AA AND V&lt;1.5*REF(BB,26) AND AA&gt;4*REF(BB,26) AND C&gt;REF(L,1) AND C&lt;REF(O,25);
+BX:=REF(V,26)=AA AND V&lt;1.5*REF(BB,27) AND AA&gt;4*REF(BB,27) AND C&gt;REF(L,1) AND C&lt;REF(O,26);
+BY:=REF(V,27)=AA AND V&lt;1.5*REF(BB,28) AND AA&gt;4*REF(BB,28) AND C&gt;REF(L,1) AND C&lt;REF(O,27);
+BZ:=REF(V,28)=AA AND V&lt;1.5*REF(BB,29) AND AA&gt;4*REF(BB,29) AND C&gt;REF(L,1) AND C&lt;REF(O,28);
+OK:DRAWICON(BC OR BD OR BE OR BF OR BG OR BH OR BI OR BJ OR BK OR BL OR BM OR BN OR BO OR BP OR BQ OR BR OR BS OR BT OR BU OR BV OR BW OR BX OR BY OR BZ,BB,1);
+</code></pre><p>&#x4E8C;&#x3001;&#x5996;&#x80A1;&#x4E8C;</p>
+<pre><code>AA:=REF(HHV(V,25),4);
+BB:=MA(V,5);
+BBB:=REF(V,4)=AA AND V&lt;2*REF(BB,6) AND AA&gt;3*REF(BB,6) AND C&gt;REF(L,1);
+BC:=REF(V,5)=AA AND V&lt;2*REF(BB,7) AND AA&gt;3*REF(BB,7) AND C&gt;REF(L,1);
+BD:=REF(V,6)=AA AND V&lt;2*REF(BB,8) AND AA&gt;3*REF(BB,8) AND C&gt;REF(L,1);
+BE:=REF(V,7)=AA AND V&lt;2*REF(BB,9) AND AA&gt;3*REF(BB,9) AND C&gt;REF(L,1);
+BF:=REF(V,8)=AA AND V&lt;2*REF(BB,10) AND AA&gt;3*REF(BB,10) AND C&gt;REF(L,1);
+BG:=REF(V,9)=AA AND V&lt;2*REF(BB,11) AND AA&gt;3*REF(BB,11) AND C&gt;REF(L,1);
+BH:=REF(V,10)=AA AND V&lt;2*REF(BB,12) AND AA&gt;3*REF(BB,12) AND C&gt;REF(L,1);
+BI:=REF(V,11)=AA AND V&lt;2*REF(BB,13) AND AA&gt;3*REF(BB,13) AND C&gt;REF(L,1);
+BJ:=REF(V,12)=AA AND V&lt;2*REF(BB,14) AND AA&gt;3*REF(BB,14) AND C&gt;REF(L,1);
+BK:=REF(V,13)=AA AND V&lt;2*REF(BB,15) AND AA&gt;3*REF(BB,15) AND C&gt;REF(L,1);
+BL:=REF(V,14)=AA AND V&lt;2*REF(BB,16) AND AA&gt;3*REF(BB,16) AND C&gt;REF(L,1);
+BM:=REF(V,15)=AA AND V&lt;2*REF(BB,17) AND AA&gt;3*REF(BB,17) AND C&gt;REF(L,1);
+BN:=REF(V,16)=AA AND V&lt;2*REF(BB,18) AND AA&gt;3*REF(BB,18) AND C&gt;REF(L,1);
+BO:=REF(V,17)=AA AND V&lt;2*REF(BB,19) AND AA&gt;3*REF(BB,19) AND C&gt;REF(L,1);
+BP:=REF(V,18)=AA AND V&lt;2*REF(BB,20) AND AA&gt;3*REF(BB,20) AND C&gt;REF(L,1);
+BQ:=REF(V,19)=AA AND V&lt;2*REF(BB,21) AND AA&gt;3*REF(BB,21) AND C&gt;REF(L,1);
+BR:=REF(V,20)=AA AND V&lt;2*REF(BB,22) AND AA&gt;3*REF(BB,22) AND C&gt;REF(L,1);
+BS:=REF(V,21)=AA AND V&lt;2*REF(BB,23) AND AA&gt;3*REF(BB,23) AND C&gt;REF(L,1);
+BT:=REF(V,22)=AA AND V&lt;2*REF(BB,24) AND AA&gt;3*REF(BB,24) AND C&gt;REF(L,1);
+BU:=REF(V,23)=AA AND V&lt;2*REF(BB,25) AND AA&gt;3*REF(BB,25) AND C&gt;REF(L,1);
+BV:=REF(V,24)=AA AND V&lt;2*REF(BB,26) AND AA&gt;3*REF(BB,26) AND C&gt;REF(L,1);
+BW:=REF(V,25)=AA AND V&lt;2*REF(BB,27) AND AA&gt;3*REF(BB,27) AND C&gt;REF(L,1);
+BX:=REF(V,26)=AA AND V&lt;2*REF(BB,28) AND AA&gt;3*REF(BB,28) AND C&gt;REF(L,1);
+BY:=REF(V,27)=AA AND V&lt;2*REF(BB,29) AND AA&gt;3*REF(BB,29) AND C&gt;REF(L,1);
+BZ:=REF(V,28)=AA AND V&lt;2*REF(BB,30) AND AA&gt;3*REF(BB,30) AND C&gt;REF(L,1);
+OK:DRAWICON(BBB OR BC OR BD OR BE OR BF OR BG OR BH OR BI OR BJ OR BK OR BL OR BM OR BN OR BO OR BP OR BQ OR BR OR BS OR BT OR BU OR BV OR BW OR BX OR BY OR BZ,BB,1);
+</code></pre><p>&#x4E09;&#x3001;&#x5996;&#x80A1;&#x4E09;</p>
+<pre><code>AA:=MA(V,5);
+BB:=V/REF(AA,1) &gt;= 2;
+CC:=REF(HHV(V,20),1);
+DD:=CC/REF(AA,1) &gt;=4;
+DRAWICON(BB AND DD,H,1);
+</code></pre><p>&#x56DB;&#x3001;&#x6C34;&#x4E0A;&#x91D1;&#x53C9;&#x4E00;</p>
+<pre><code>MACDDIF := &quot;MACD.DIF #DAY&quot;(10,20,7) ;
+MACDDEA    := &quot;MACD.DEA #DAY&quot;(10,20,7) ;
+REF_MACDDIF:=REF(MACDDIF,1);
+REF_MACDDEA:=REF(MACDDEA,1);
+BB:=CROSS(REF_MACDDEA,REF_MACDDIF);
+CC:=CROSS(MACDDIF,MACDDEA);
+DD:=BB AND CC AND MACDDIF+MACDDEA&gt;0;
+DRAWICON(DD,H,1);
+</code></pre><p>&#x4E94;&#x3001;&#x6C34;&#x4E0A;&#x91D1;&#x53C9;&#x4E8C;</p>
+<pre><code>MACDDIF := &quot;MACD.DIF #DAY&quot;(10,20,7) ;
+MACDDEA    := &quot;MACD.DEA #DAY&quot;(10,20,7) ;
+REF_MACDDIF:=REF(MACDDIF,2);
+REF_MACDDEA:=REF(MACDDEA,2);
+BB:=CROSS(REF_MACDDEA,REF_MACDDIF);
+CC:=CROSS(MACDDIF,MACDDEA);
+DD:=BB AND CC AND MACDDIF+MACDDEA&gt;0;
+DRAWICON(DD,H,1);
+</code></pre><p>&#x516D;&#x3001;&#x6C34;&#x4E0A;&#x91D1;&#x53C9;&#x4E09;</p>
+<pre><code>MACDDIF := &quot;MACD.DIF #DAY&quot;(10,20,7) ;
+MACDDEA    := &quot;MACD.DEA #DAY&quot;(10,20,7) ;
+REF_MACDDIF:=REF(MACDDIF,3);
+REF_MACDDEA:=REF(MACDDEA,3);
+BB:=CROSS(REF_MACDDEA,REF_MACDDIF);
+CC:=CROSS(MACDDIF,MACDDEA);
+DD:=BB AND CC AND MACDDIF+MACDDEA&gt;0;
+DRAWICON(DD,H,1);
+</code></pre>
                                 
                                 </section>
                             
@@ -482,7 +612,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"97_shares","level":"1.7","depth":1,"next":{"title":"98_medicine","level":"1.8","depth":1,"path":"98_medicine.md","ref":"98_medicine.md","articles":[]},"previous":{"title":"50_spd","level":"1.6","depth":1,"path":"50_spd.md","ref":"50_spd.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"97_shares.md","mtime":"2022-10-29T11:13:03.854Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-29T11:13:35.071Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"97_shares","level":"1.10","depth":1,"next":{"title":"98_medicine","level":"1.11","depth":1,"path":"98_medicine.md","ref":"98_medicine.md","articles":[]},"previous":{"title":"50_spd","level":"1.9","depth":1,"path":"50_spd.md","ref":"50_spd.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"97_shares.md","mtime":"2022-11-05T14:31:40.931Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-11-05T14:32:40.536Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
