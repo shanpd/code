@@ -1,20 +1,20 @@
 # Summary
 
 * [README](README.md)
-* [02_java](02_java.md)
-* [01_environment](01_environment.md)
-* [04_api](04_api.md)
-* [05_softtest](05_softtest.md)
-* [49_welink](49_welink.md)
-* [48_interview](48_interview.md)
-* [10_mysql](10_mysql.md)
-* [50_spd](50_spd.md)
-* [97_shares](97_shares.md)
-* [98_medicine](98_medicine.md)
-* [99_passwd](99_passwd.md)
-
-* git add .
-* git commit -m 'all'
-* git push origin master
-
-
+* [1、工作](1.1_env.md)
+  * [1.1、env](1.1_env.md)
+  * [1.2、mysql](1.2_mysql.md)
+  * [1.3、java](1.3_java.md)
+  * [1.4、python](1.4_python.md)
+  * [1.5、testTheory](1.5_testTheory.md)
+  * [1.6、workNotes](1.6_workNotes.md)
+  * [1.7、huawei](1.7_huawei.md)
+  * [1.8、]()
+  * [1.9、interview](1.9_interview.md)
+* [2、股票](2.1_shares.md)
+  * [2.1、理论](2.1_shares.md)
+  * [2.2、公式](2.2_formula.md)
+* [3、医药](3.1_medicine.md)
+  * [3.1、medicine](3.1_medicine.md)
+* [4、备忘](4.1_passwd.md)
+  * [4.1、passwd](4.1_passwd.md)
